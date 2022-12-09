@@ -1,5 +1,5 @@
 FROM debian
-RUN apt update && apt install wget
+RUN apt update && apt install wget -y
 # RUN apt install gpg
 # RUN apt install tee
 # RUN wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
