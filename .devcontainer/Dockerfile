@@ -5,5 +5,5 @@ RUN apt install unzip -y
 RUN apt install curl -y
 RUN wget https://releases.hashicorp.com/terraform/1.3.6/terraform_1.3.6_linux_386.zip
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
-ADD terraform_1.3.6_linux_386.zip -d /usr/local/bin
+RUN unzip terraform_1.3.6_linux_386.zip -d /usr/local/bin
 ENTRYPOINT ["tail", "-f", "/dev/null"]
