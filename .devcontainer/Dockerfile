@@ -4,7 +4,7 @@ FROM alpine:3.12
 RUN apk update && apk add curl unzip
 
 # Baixa a versão mais recente do Terraform
-RUN curl -LO https://releases.hashicorp.com/terraform/0.15.5/terraform_0.15.5_linux_amd64.zip
+RUN curl -LO https://releases.hashicorp.com/terraform/1.3.6/terraform_1.3.6_linux_amd64.zip
 
 # Descompacta o arquivo baixado
 RUN unzip terraform_0.15.5_linux_amd64.zip
